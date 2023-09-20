@@ -296,16 +296,22 @@ class _Assigment2State extends State<Assigment2> {
                 ),
                 SizedBox(
                     width: double.infinity,
+                    height: 50,
                     child: ElevatedButton(
-                      child: Text(
-                        'Save',
-                        style: TextStyle(color: Colors.white),
+                      child: Row(
+                        children: [
+                          Text('$price'),
+                          Spacer(),
+                          Text(
+                            'اضافة للسلة',
+                            style: TextStyle(color: Colors.white,),
+                          ),
+                        ],
                       ),
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         // primary: Color.fromRGBO(23, 152, 185, 100),
-
-                        primary: Colors.cyan,
+                        primary: Colors.lightBlueAccent,
                         onPrimary: Colors.white,
                         padding: EdgeInsets.symmetric(horizontal: 30),
                         shape: RoundedRectangleBorder(
