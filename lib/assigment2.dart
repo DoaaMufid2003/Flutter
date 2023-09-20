@@ -10,7 +10,7 @@ class Assigment2 extends StatefulWidget {
 
 class _Assigment2State extends State<Assigment2> {
   int count = 0;
-  num price = 9;
+  num price = 0;
 
   @override
   void initState() {
