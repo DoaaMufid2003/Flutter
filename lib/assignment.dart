@@ -128,9 +128,18 @@ class Assignment extends StatelessWidget {
                   padding: const EdgeInsets.all(15.0),
                   child: Align(
                       alignment: AlignmentDirectional.topStart,
-                      child: Text("More in Bali", style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18,color: Colors.green),)),
+                      child: Text(
+                        "More in Bali",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 18,
+                            color: Colors.green),
+                      )),
                 ),
-                Icon(Icons.navigate_next_rounded,color: Colors.green,)
+                Icon(
+                  Icons.navigate_next_rounded,
+                  color: Colors.green,
+                )
               ],
             )
           ],
