@@ -1,3 +1,8 @@
+import 'postModel.dart';
+
+List<PostModel> postsModel =
+mapData.map((e) => PostModel.fromMap(e)).toList();
+
 List<Map> mapData = [
   {
     "name": "Post 1",

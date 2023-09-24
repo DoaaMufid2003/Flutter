@@ -7,6 +7,8 @@ class Post1Screen extends StatefulWidget {
 
 class _Post1ScreenState extends State<Post1Screen> {
   List<String> content = [];
+  TextEditingController controller=TextEditingController();
+
   String commint="";
 
   @override
@@ -19,6 +21,7 @@ class _Post1ScreenState extends State<Post1Screen> {
             fit: BoxFit.cover,
           ),
           TextField(
+            controller:controller ,
             onChanged: (value) {
               commint = value;
             },
@@ -26,7 +29,13 @@ class _Post1ScreenState extends State<Post1Screen> {
                 suffixIcon: InkWell(
                     onTap: () {
                       setState(() {
-                        content.add(commint);
+                        content.add(
+                            controller.text
+                                //طريقة اخري حطيناها في متغير
+                          // commint
+                        );
+
+                        controller.clear();
                       });
                     },
                     child: Icon(

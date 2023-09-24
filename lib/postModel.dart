@@ -2,7 +2,7 @@ class PostModel {
   String? name;
   String? image;
   String? content;
-  bool? isFavorite;
+  bool isFavorite=false;
   User? user;
 
   PostModel.fromMap(Map map) {

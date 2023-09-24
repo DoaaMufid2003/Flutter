@@ -1,3 +1,4 @@
+import 'package:example/BNB_screen.dart';
 import 'package:example/assigment2.dart';
 import 'package:example/assignment.dart';
 import 'package:example/postWidget1.dart';
@@ -31,16 +32,31 @@ void main() {
   ];
   // Post object=new Po;
   var i;
-  runApp(MaterialApp(home: Assigment2()
-      // Scaffold(
-      //   appBar: AppBar(
-      //     title: Text("AppBar"),
-      //   ),
-      //   body: Column(
-      //    children: data.map((e){
-      //      return Post(e["name"],e["image_url"],e["city"]);
-      //    }).toList()
-      //   ),
-      // ),
-      ));
+  runApp(Home());
 }
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+
+  updateScreen(){
+    setState(() {
+
+    });
+  }
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home:
+        // Post1Screen()
+         BNBScreen(updateScreen),theme: Utitless.isDark?ThemeData.dark():ThemeData.light(),
+    );
+  }
+}
+class Utitless{
+static bool isDark=true;
+}
+
